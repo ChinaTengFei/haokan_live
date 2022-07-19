@@ -1,0 +1,20 @@
+@media screen and (max-width:750px) {
+  .list_content .vsp.timems {
+    color : #00BCB4 !important;
+    font-size : 12px !important;
+    font-weight : 400 !important;
+    left : 50%;
+    top : 14px;
+  }
+  .score {
+    color : #00BCB4 !important;
+    font-size : 38px !important;
+    font-weight : 700;
+    letter-spacing : 5px !important;
+  }
+  .bgc1 .jiabifeng .eventtime {
+    top : 4px;
+    left : 4px;
+  }
+}
+

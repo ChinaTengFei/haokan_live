@@ -1,0 +1,1513 @@
+@charset 'utf-8';
+
+html {
+  background : #FFFFFF;
+  overflow : auto;
+  height : 100%;
+  font-size : 11px;
+}
+
+#red {
+  /* background: url(/img/background_red.jpg?r=2) no-repeat top center #f4f4f4; */
+  background-size : 100% auto;
+}
+
+#red .show {
+  display : block !important;
+}
+
+#red header {
+  background : #E60640;
+}
+
+#pink header {
+  background : pink;
+}
+
+#red .wap-app-box {
+  background-image : linear-gradient(to bottom right, #3DBEE7, #007BEC);
+}
+
+#red .wap-app-box a.djxz {
+  background : #FFFFFF;
+  color : #E60640;
+}
+
+#red .index-nav .active i {
+  background : #E60640;
+}
+
+#red .index-nav .active {
+  color : #E60640;
+}
+
+#red .index-div .date-p .date {
+  background : #CFF4E9;
+  color : #E60640;
+}
+
+#red .singldl .active {
+  background : #EE564F;
+  color : #FFFFFF;
+}
+
+#red .waplist .once {
+  background-image : linear-gradient(to right bottom, #F14874, #E60640);
+}
+
+#red .download-wap-btn {
+  background : #E60640;
+}
+
+#red .tzpt_nav a {
+  color : #333333;
+}
+
+#red .tzpt_nav li.default a {
+  color : #EE564F;
+}
+
+#red .tzpt_nav li.default:after {
+  background : #EE564F;
+}
+
+#red .mjtj-list:nth-child(4n+1) .number {
+  background : #FE6301;
+}
+
+#red .mjtj-list:nth-child(4n+2) .number {
+  background : #2FC595;
+}
+
+#red .mjtj-list:nth-child(4n+3) .number {
+  background : #F04B59;
+}
+
+#red .mjtj-list:nth-child(4n+4) .number {
+  background : #17A0F1;
+}
+
+#red .mjtj-list .contant .copy-btn {
+  background : #EE564F;
+  border-radius : 2rem;
+  color : #FFFFFF;
+}
+
+#red .zhiding {
+  background-image : linear-gradient(to right, #FDD3DD, #FDD6E0, #FEF4F7);
+  border-bottom : 1px #FBBBCA solid ;
+}
+
+#red .zhiding:before {
+  content : '';
+  /* background: url(/img/zd_img_w.png) no-repeat top left/33px 33px */
+}
+
+#red .index-div_zd .date-p .date {
+  background : #CFF4E9;
+  color : #E60640;
+}
+
+#red .index-div_zd a .center .vsp {
+  color : #EE564F;
+}
+
+#red .index-div_zd a .video {
+  color : #FFFFFF;
+  background : #E60640;
+}
+
+#red .index-nav .active i {
+  background : #E60640;
+}
+
+#red .index-nav .active {
+  color : #E60640;
+}
+
+#red .jump_videoan {
+  color : #FFFFFF;
+  background : #DE1E30;
+}
+
+#red .refreshbtn {
+  background : #E60640;
+}
+
+#red .refreshbtn i {
+  background : url(/img/shuaxing_n.png) no-repeat center center #E60640 !important;
+}
+
+#red .index-div a .zb_green {
+  background : #E60640;
+}
+
+#red .btn {
+  color : #FFFFFF;
+  background : #E60640;
+}
+
+#red .clock-d {
+  animation : clockD 1s infinite;
+}
+
+@keyframes clockD {
+  0% {
+    color : transparent;
+  }
+
+  40% {
+    color : #006FC0;
+  }
+
+  80% {
+    color : #006FC0;
+  }
+
+  100% {
+    color : transparent;
+  }
+}
+
+@media screen and (min-width:750px) {
+  #red .pcrlist .hdiv {
+    background : #E60640;
+    color : #FFFFFF;
+  }
+
+  #red .download-btn a:hover {
+    background : #E60640;
+    color : #FFFFFF;
+  }
+
+  #red .tzpt_nav li.default a {
+    color : #006FC0;
+  }
+
+  #red .tzpt_nav li.default:after {
+    background : #006FC0;
+  }
+
+  #red .mjtj-list:nth-child(4n+1) .number {
+    background : #FE6301;
+  }
+
+  #red .mjtj-list:nth-child(4n+2) .number {
+    background : #2FC595;
+  }
+
+  #red .mjtj-list:nth-child(4n+3) .number {
+    background : #F04B59;
+  }
+
+  #red .mjtj-list:nth-child(4n+4) .number {
+    background : #17A0F1;
+  }
+
+  #red .mjtj-list .contant .copy-btn {
+    background : #006FC0;
+    border-radius : 4px;
+    color : #FFFFFF;
+  }
+
+  #red .zhiding {
+    background-image : linear-gradient(to right, #FDD3DD, #FDD6E0, #FEF4F7);
+    border-bottom : 1px #FBBBCA solid !important;
+  }
+
+  #red .zhiding:before {
+    content : '';
+    /* background: url(/img/zd_img_red.png) no-repeat top left/33px 33px */
+  }
+
+  #red .top-div {
+    border-bottom : 2px #FBBBCA solid;
+  }
+
+  #red .navindex li {
+    color : #E60640;
+  }
+
+  #red .index-nav .active i {
+    background : #E60640;
+  }
+
+  #red .index-nav .active {
+    color : #FFFFFF;
+    background : #E60640;
+  }
+
+  #red .index-div .date-p {
+    background : #F9F9F9;
+    color : #E60640;
+  }
+
+  #red .mjtjbj {
+    background : #F3F3F3;
+  }
+
+  #red .indexbtn {
+    background : #E60640;
+  }
+
+  #red .indexbtn i {
+    background : url(/img/index-PC.png) no-repeat center center #E60640 !important;
+  }
+
+  #red .index-div a .zb_green:hover {
+    background : #B90533;
+  }
+
+  #red .index-div a:hover {
+    background : #FFF4F6;
+  }
+
+  #red .totop {
+    background : #E60640;
+  }
+
+  #red .totop i {
+    background : url(/img/totop.png) no-repeat center center #E60640 !important;
+  }
+
+  #red .jump_videoan {
+    color : #FFFFFF;
+    background : #DE1E30;
+  }
+
+  #red .jfqh_wrap a {
+    color : #E60640;
+  }
+
+  #red .jiabifeng .changci {
+    color : #E60640;
+  }
+
+  #red .jiabifeng .jingq p {
+    color : #E60640;
+  }
+
+  #red .jiabifeng .jingq_k p {
+    color : #E60640;
+  }
+
+  #red .jiabifeng .jingq_bt {
+    color : #E60640;
+    font-weight : 700;
+  }
+
+  #red .bifeng_num .jing {
+    color : #E60640;
+  }
+
+  #red .jiabifeng .zhujingq p {
+    color : #E60640;
+  }
+
+  #red .jiabifeng .zhujingq_k p {
+    color : #E60640;
+  }
+
+  #red .jiabifeng .zhujingq_bt {
+    color : #E60640;
+  }
+
+  #red .bifeng .jing {
+    color : #E60640;
+  }
+
+  #red .bifeng_zhishu .bs_bt_zt {
+    color : #EF584C;
+  }
+
+  #red .bifeng_zhishu .bs_time {
+    color : #E60640;
+  }
+
+  #red .bifeng_zhishu .bs_befeng {
+    color : #E60640;
+  }
+
+  #red .zhishu .jscs_num cite.red {
+    background : #EF584C;
+  }
+
+  #red .zhishu .jscs_num cite.blue {
+    background : #E60640;
+  }
+
+  #red .zhishu .jscs_num cite.yellow {
+    background : #E60640;
+    color : #FFFFFF;
+  }
+
+  #red .zhishu_lan .qcred {
+    color : #E60640;
+  }
+
+  #red .bifeng_kai .btnn {
+    background-color : #E60640;
+  }
+
+  #red .newyearl {
+    /* background: url(/img/logo_june_l_red.png?r=42) */
+  }
+
+  #red .newyearr {
+    /* background: url(/img/logo_june_r_red.png?r=42) */
+  }
+
+  #red .bifeng_zhishu .yikaisai .ks_vs_new em {
+    color : #E60640;
+  }
+}
+
+@media screen and (max-width:750px) {
+  #red .zhiding:before {
+    content : '';
+    /* background: url(/img/zd_img_w_r_red.png) no-repeat top left/33px 33px */
+  }
+
+  #red .jiabifeng .changci {
+    color : #E60640;
+  }
+
+  #red .jiabifeng .bifeng {
+    color : #E60640;
+  }
+
+  #red .jiabifeng .jingq p {
+    color : #006FC0;
+  }
+
+  #red .jiabifeng .jingq_k p {
+    color : #E60640;
+  }
+
+  #red .jiabifeng .jingq_bt {
+    color : #E60640;
+  }
+
+  #red .bifeng_num .jing {
+    color : #E60640;
+  }
+
+  #red .bifeng .jing {
+    color : #E60640;
+  }
+
+  #red .jiabifeng .zhujingq p {
+    color : #E60640;
+    font-weight : 700;
+  }
+
+  #red .jiabifeng .zhujingq_k p {
+    color : #E60640;
+  }
+
+  #red .jiabifeng .zhujingq_bt {
+    color : #E60640;
+  }
+
+  #red .bifeng_zhishu .bs_vs {
+    color : #EF584C;
+  }
+
+  #red .bifeng_zhishu .bs_bt_zt {
+    color : #EF584C;
+  }
+
+  #red .bifeng_zhishu .bs_time {
+    color : #E60640;
+  }
+
+  #red .bifeng_zhishu .bs_befeng {
+    color : #E60640;
+  }
+
+  #red .zhishu .jscs_num cite.red {
+    background : #EF584C;
+    color : #FFFFFF;
+  }
+
+  #red .zhishu .jscs_num cite.blue {
+    background : #E60640;
+    color : #FFFFFF;
+  }
+
+  #red .zhishu .jscs_num cite.yellow {
+    background : #E60640;
+    color : #FFFFFF;
+  }
+
+  #red .bifeng_pei .redyellow_p {
+    color : #E60640;
+  }
+
+  #red .bifeng_pei .redyellow_p em.bianhua {
+    background : #E60640;
+    color : #FFFFFF;
+  }
+
+  #red .bfonoff {
+    background-color : #E60640;
+  }
+
+  #red .jfqh_wrap a {
+    color : #E60640;
+  }
+
+  #red .newyearl {
+    /* background: url(/img/logo_june_l_w_red.png?r=42) no-repeat; */
+    background-size : 100%;
+  }
+
+  #red .newyearr {
+    /* background: url(/img/logo_june_r_w_red.png?r=42) no-repeat; */
+    background-size : 100%;
+  }
+}
+
+@media screen and (max-width:750px) {
+  #red .gb_ad_an {
+    background : #E60640;
+    border : 1px #E60640 solid;
+    color : #FFFFFF;
+  }
+}
+
+@media screen and (min-width:750px) {
+  #red .gb_ad_an {
+    background : #E60640;
+    color : #FFFFFF;
+  }
+
+  #red .guanbi_ad:hover .gb_ad_an {
+    background : #E60640;
+    color : #FFFFFF;
+  }
+
+  #red .bs_time_new {
+    display : none;
+    margin-bottom : 15px;
+    color : #E60640;
+  }
+}
+
+@media screen and (max-width:750px) {
+  #red .bs_bt_title .bs_time_new {
+    color : #E60640;
+  }
+}
+
+#red .zhti_qiehuan > li:hover {
+  color : #E60640;
+}
+
+#red .no-data .zwsig {
+  background : url(/img/no-data_red.png) no-repeat;
+  background-size : 100%;
+}
+
+#red .index_login_wrap {
+  /* background: url(/img/div_loding_red.gif) no-repeat center; */
+  background-size : 100%;
+}
+
+#blue {
+  /* background: url(/img/background_blue.jpg?r=2) no-repeat top center #f4f4f4; */
+  background-size : 100% auto;
+}
+
+#blue header {
+  background : #006BB7;
+}
+
+#blue .wap-app-box {
+  background-image : linear-gradient(to bottom right, #3DBEE7, #007BEC);
+}
+
+#blue .wap-app-box a.djxz {
+  background : #FFFFFF;
+  color : #006BB7;
+}
+
+#blue .index-nav .active i {
+  background : #006BB7;
+}
+
+#blue .index-nav .active {
+  color : #006BB7;
+}
+
+#blue .index-div .date-p .date {
+  background : #CFF4E9;
+  color : #006BB7;
+}
+
+#blue .index-div a .video {
+  color : #FFFFFF;
+}
+
+#blue .waplist .once {
+  background-image : linear-gradient(to right bottom, #73C5FF, #006BB7);
+}
+
+#blue .download-wap-btn {
+  background : #006BB7;
+}
+
+#blue .tzpt_nav li.default a {
+  color : #EE564F;
+}
+
+#blue .tzpt_nav li.default:after {
+  background : #EE564F;
+}
+
+#blue .mjtj-list:nth-child(4n+1) .number {
+  background : #FE6301;
+}
+
+#blue .mjtj-list:nth-child(4n+2) .number {
+  background : #2FC595;
+}
+
+#blue .mjtj-list:nth-child(4n+3) .number {
+  background : #F04B59;
+}
+
+#blue .mjtj-list:nth-child(4n+4) .number {
+  background : #17A0F1;
+}
+
+#blue .mjtj-list .contant .copy-btn {
+  background : #EE564F;
+  border-radius : 2rem;
+  color : #FFFFFF;
+}
+
+#blue .zhiding {
+  background-image : linear-gradient(to right, #CEDFFB, #D0E0FB, #F7FAFE);
+  border-bottom : 1px #B4CEF6 solid;
+}
+
+#blue .index-div_zd .date-p .date {
+  background : #CFF4E9;
+  color : #006BB7;
+}
+
+#blue .index-div_zd a .center .vsp {
+  color : #EE564F;
+}
+
+#blue .index-div_zd a .video {
+  color : #FFFFFF;
+  background : #006BB7;
+}
+
+#blue .index-nav .active i {
+  background : #006BB7;
+}
+
+#blue .index-nav .active {
+  color : #006BB7;
+}
+
+#blue .jump_videoan {
+  color : #FFFFFF;
+  background : #DE1E30;
+}
+
+#blue .refreshbtn {
+  background : #006BB7;
+}
+
+#blue .refreshbtn i {
+  background : url(/img/shuaxing_n.png) no-repeat center center #006BB7 !important;
+}
+
+#blue .index-div a .zb_green {
+  background : #006BB7;
+}
+
+#blue .btn {
+  color : #FFFFFF;
+  background : #006BB7;
+}
+
+@keyframes clockD {
+  0% {
+    color : transparent;
+  }
+
+  40% {
+    color : #006FC0;
+  }
+
+  80% {
+    color : #006FC0;
+  }
+
+  100% {
+    color : transparent;
+  }
+}
+
+@media screen and (min-width:750px) {
+  #blue .pcrlist .hdiv {
+    background : #006BB7;
+    color : #FFFFFF;
+  }
+
+  #blue .download-btn a:hover {
+    background : #006BB7;
+    color : #FFFFFF;
+  }
+
+  #blue .tzpt_nav li.default a {
+    color : #006FC0;
+  }
+
+  #blue .tzpt_nav li.default:after {
+    background : #006FC0;
+  }
+
+  #blue .mjtj-list:nth-child(4n+1) .number {
+    background : #FE6301;
+  }
+
+  #blue .mjtj-list:nth-child(4n+2) .number {
+    background : #2FC595;
+  }
+
+  #blue .mjtj-list:nth-child(4n+3) .number {
+    background : #F04B59;
+  }
+
+  #blue .mjtj-list:nth-child(4n+4) .number {
+    background : #17A0F1;
+  }
+
+  #blue .mjtj-list .contant .copy-btn {
+    background : #006FC0;
+    border-radius : 4px;
+    color : #FFFFFF;
+  }
+
+  #blue .zhiding {
+    background-image : linear-gradient(to right, #CEDFFB, #D0E0FB, #F7FAFE);
+    border-bottom : 1px #B4CEF6 solid ;
+  }
+
+  #blue .zhiding:before {
+    content : '';
+    /* background: url(/img/zd_img_blue.png) no-repeat top left/33px 33px */
+  }
+
+  #blue .top-div {
+    border-bottom : 2px #B4CEF6 solid;
+  }
+
+  #blue .navindex li {
+    color : #006BB7;
+  }
+
+  #blue .index-nav .active i {
+    background : #006BB7;
+  }
+
+  #blue .index-nav .active {
+    color : #FFFFFF;
+    background : #006BB7;
+  }
+
+  #blue .index-div .date-p {
+    background : #F9F9F9;
+    color : #006BB7;
+  }
+
+  #blue .mjtjbj {
+    background : #F3F3F3;
+  }
+
+  #blue .indexbtn {
+    background : #006BB7;
+  }
+
+  #blue .indexbtn i {
+    background : url(/img/index-PC.png) no-repeat center center #006BB7 !important;
+  }
+
+  #blue .index-div a .zb_green:hover {
+    background : #005693;
+  }
+
+  #blue .index-div a:hover {
+    background : #F0F5FE;
+  }
+
+  #blue .totop {
+    background : #006BB7;
+  }
+
+  #blue .totop i {
+    background : url(/img/totop.png) no-repeat center center #006BB7 !important;
+  }
+
+  #blue footer {
+    border-top : 60px #F6F6F6 solid;
+  }
+
+  #blue .jump_videoan {
+    color : #FFFFFF;
+    background : #DE1E30;
+  }
+
+  #blue .jfqh_wrap a {
+    color : #006BB7;
+  }
+
+  #blue .jiabifeng .changci {
+    color : #006BB7;
+  }
+
+  #blue .jiabifeng .jingq p {
+    color : #006BB7;
+  }
+
+  #blue .jiabifeng .jingq_k p {
+    color : #006BB7;
+  }
+
+  #blue .jiabifeng .jingq_bt {
+    color : #006BB7;
+    font-weight : 700;
+  }
+
+  #blue .bifeng_num .jing {
+    color : #006BB7;
+  }
+
+  #blue .jiabifeng .zhujingq p {
+    color : #006BB7;
+  }
+
+  #blue .jiabifeng .zhujingq_k p {
+    color : #006BB7;
+  }
+
+  #blue .jiabifeng .zhujingq_bt {
+    color : #006BB7;
+  }
+
+  #blue .bifeng .jing {
+    color : #006BB7;
+  }
+
+  #blue .bifeng_zhishu .bs_bt_zt {
+    color : #EF584C;
+  }
+
+  #blue .bifeng_zhishu .bs_time {
+    color : #006BB7;
+  }
+
+  #blue .bifeng_zhishu .bs_befeng {
+    color : #006BB7;
+  }
+
+  #blue .zhishu .jscs_num cite.red {
+    background : #EF584C;
+  }
+
+  #blue .zhishu .jscs_num cite.blue {
+    background : #006BB7;
+  }
+
+  #blue .zhishu .jscs_num cite.yellow {
+    background : #006BB7;
+    color : #FFFFFF;
+  }
+
+  #blue .zhishu_lan .qcred {
+    color : #006BB7;
+  }
+
+  #blue .bifeng_kai .btnn {
+    background-color : #006BB7;
+  }
+
+  #blue .newyearl {
+    /* background: url(/img/logo_june_l_blue.png?r=42) */
+  }
+
+  #blue .newyearr {
+    /* background: url(/img/logo_june_r_blue.png?r=42) */
+  }
+
+  #blue .bifeng_zhishu .yikaisai .ks_vs_new em {
+    color : #006BB7;
+  }
+}
+
+@media screen and (max-width:750px) {
+  #blue .zhiding:before {
+    content : '';
+    /* background: url(/img/zd_img_w_r_red.png) no-repeat top left/33px 33px */
+  }
+
+  #blue .jiabifeng .changci {
+    color : #006BB7;
+  }
+
+  #blue .jiabifeng .bifeng {
+    color : #006BB7;
+  }
+
+  #blue .jiabifeng .jingq p {
+    color : #006FC0;
+  }
+
+  #blue .jiabifeng .jingq_k p {
+    color : #006BB7;
+  }
+
+  #blue .jiabifeng .jingq_bt {
+    color : #006BB7;
+  }
+
+  #blue .bifeng_num .jing {
+    color : #006BB7;
+  }
+
+  #blue .bifeng .jing {
+    color : #006BB7;
+  }
+
+  #blue .jiabifeng .zhujingq p {
+    color : #006BB7;
+    font-weight : 700;
+  }
+
+  #blue .jiabifeng .zhujingq_k p {
+    color : #006BB7;
+  }
+
+  #blue .jiabifeng .zhujingq_bt {
+    color : #006BB7;
+  }
+
+  #blue .bifeng_zhishu .bs_vs {
+    color : #EF584C;
+  }
+
+  #blue .bifeng_zhishu .bs_bt_zt {
+    color : #EF584C;
+  }
+
+  #blue .bifeng_zhishu .bs_time {
+    color : #006BB7;
+  }
+
+  #blue .bifeng_zhishu .bs_befeng {
+    color : #006BB7;
+  }
+
+  #blue .zhishu .jscs_num cite.red {
+    background : #EF584C;
+    color : #FFFFFF;
+  }
+
+  #blue .zhishu .jscs_num cite.blue {
+    background : #006BB7;
+    color : #FFFFFF;
+  }
+
+  #blue .zhishu .jscs_num cite.yellow {
+    background : #006BB7;
+    color : #FFFFFF;
+  }
+
+  #blue .bifeng_pei .redyellow_p {
+    color : #006BB7;
+  }
+
+  #blue .bifeng_pei .redyellow_p em.bianhua {
+    background : #006BB7;
+    color : #FFFFFF;
+  }
+
+  #blue .bfonoff {
+    background-color : #006BB7;
+  }
+
+  #blue .jfqh_wrap a {
+    color : #006BB7;
+  }
+
+  #blue .newyearl {
+    /* background: url(/img/logo_june_l_w_blue.png?r=42) no-repeat; */
+    background-size : 100%;
+  }
+
+  #blue .newyearr {
+    /* background: url(/img/logo_june_r_w_blue.png?r=42) no-repeat; */
+    background-size : 100%;
+  }
+}
+
+@media screen and (max-width:750px) {
+  #blue .gb_ad_an {
+    background : #006BB7;
+    border : 1px #006BB7 solid;
+    color : #FFFFFF;
+  }
+}
+
+@media screen and (min-width:750px) {
+  #blue .gb_ad_an {
+    background : #006BB7;
+    color : #FFFFFF;
+  }
+
+  #blue .guanbi_ad:hover .gb_ad_an {
+    background : #006BB7;
+    color : #FFFFFF;
+  }
+
+  #blue .bs_time_new {
+    display : none;
+    margin-bottom : 15px;
+    color : #006BB7;
+  }
+}
+
+@media screen and (max-width:750px) {
+  #blue .bs_bt_title .bs_time_new {
+    color : #006BB7;
+  }
+}
+
+#blue .zhti_qiehuan > li:hover {
+  color : #006BB7;
+}
+
+#blue .no-data .zwsig {
+  background : url(/img/no-data_blue.png) no-repeat;
+  background-size : 100%;
+}
+
+#blue .index_login_wrap {
+  /* background: url(/img/div_loding_blue.gif) no-repeat center; */
+  background-size : 100%;
+}
+
+html {
+  background : #FFFFFF;
+  overflow : auto;
+  height : 100%;
+  font-size : 11px;
+}
+
+#yellow {
+  /* background: url(/img/background_yellow.jpg?r=2) no-repeat top center #f4f4f4; */
+  background-size : 100% auto;
+}
+
+#yellow .show {
+  display : block !important;
+}
+
+#yellow header {
+  background : #FD8521;
+}
+
+#yellow .wap-app-box {
+  background-image : linear-gradient(to bottom right, #3DBEE7, #007BEC);
+}
+
+#yellow .wap-app-box a.djxz {
+  background : #FFFFFF;
+  color : #FD8521;
+}
+
+#yellow .index-nav .active i {
+  background : #FD8521;
+}
+
+#yellow .index-nav .active {
+  color : #FD8521;
+}
+
+#yellow .index-div .date-p .date {
+  background : #CFF4E9;
+  color : #FD8521;
+}
+
+#yellow .singldl .active {
+  background : #EE564F;
+  color : #FFFFFF;
+}
+
+#yellow .waplist .once {
+  background-image : linear-gradient(to right bottom, #FFCDA4, #FD9521);
+}
+
+#yellow .download-wap-btn {
+  background : #FD8521;
+}
+
+#yellow .tzpt_nav a {
+  color : #333333;
+}
+
+#yellow .tzpt_nav li.default a {
+  color : #EE564F;
+}
+
+#yellow .tzpt_nav li.default:after {
+  background : #EE564F;
+}
+
+#yellow .mjtj-list:nth-child(4n+1) .number {
+  background : #FE6301;
+}
+
+#yellow .mjtj-list:nth-child(4n+2) .number {
+  background : #2FC595;
+}
+
+#yellow .mjtj-list:nth-child(4n+3) .number {
+  background : #F04B59;
+}
+
+#yellow .mjtj-list:nth-child(4n+4) .number {
+  background : #17A0F1;
+}
+
+#yellow .mjtj-list .contant .copy-btn {
+  background : #EE564F;
+  border-radius : 2rem;
+  color : #FFFFFF;
+}
+
+#yellow .zhiding {
+  background-image : linear-gradient(to right, #F9E0CB, #F9E1CC, #FDF4EC);
+  border-bottom : 1px #F2CEAE solid;
+}
+
+#yellow .zhiding:before {
+  content : '';
+  /* background: url(/img/zd_img_w.png) no-repeat top left/33px 33px */
+}
+
+#yellow .index-div_zd .date-p .date {
+  background : #CFF4E9;
+  color : #FD8521;
+}
+
+#yellow .index-div_zd a .center .vsp {
+  color : #EE564F;
+}
+
+#yellow .index-div_zd a .video {
+  color : #FFFFFF;
+  background : #FD8521;
+}
+
+#yellow .index-nav .active i {
+  background : #FD8521;
+}
+
+#yellow .index-nav .active {
+  color : #FD8521;
+}
+
+#yellow .jump_videoan {
+  color : #FFFFFF;
+  background : #DE1E30;
+}
+
+#yellow .refreshbtn {
+  background : #FD8521;
+}
+
+#yellow .refreshbtn i {
+  background : url(/img/shuaxing_n.png) no-repeat center center #FD8521 !important;
+}
+
+#yellow .index-div a .zb_green {
+  background : #FD8521;
+}
+
+#yellow .btn {
+  color : #FFFFFF;
+  background : #FD8521;
+}
+
+#yellow .clock-d {
+  animation : clockD 1s infinite;
+}
+
+@keyframes clockD {
+  0% {
+    color : transparent;
+  }
+
+  40% {
+    color : #006FC0;
+  }
+
+  80% {
+    color : #006FC0;
+  }
+
+  100% {
+    color : transparent;
+  }
+}
+
+@media screen and (min-width:750px) {
+  #yellow .pcrlist .hdiv {
+    background : #FD8521;
+    color : #FFFFFF;
+  }
+
+  #yellow .tzpt_nav li.default a {
+    color : #006FC0;
+  }
+
+  #yellow .tzpt_nav li.default:after {
+    background : #006FC0;
+  }
+
+  #yellow .mjtj-list:nth-child(4n+1) .number {
+    background : #FE6301;
+  }
+
+  #yellow .mjtj-list:nth-child(4n+2) .number {
+    background : #2FC595;
+  }
+
+  #yellow .mjtj-list:nth-child(4n+3) .number {
+    background : #F04B59;
+  }
+
+  #yellow .mjtj-list:nth-child(4n+4) .number {
+    background : #17A0F1;
+  }
+
+  #yellow .mjtj-list .contant .copy-btn {
+    background : #006FC0;
+    border-radius : 4px;
+    color : #FFFFFF;
+  }
+
+  #yellow .zhiding {
+    background-image : linear-gradient(to right, #F9E0CB, #F9E1CC, #FDF4EC);
+    border-bottom : 1px #F2CEAE solid ;
+  }
+
+  #yellow .zhiding:before {
+    content : '';
+    /* background: url(/img/zd_img_yellow.png) no-repeat top left/33px 33px */
+  }
+
+  #yellow .top-div {
+    border-bottom : 2px #F2CEAE solid;
+  }
+
+  #yellow .navindex li {
+    color : #FD8521;
+  }
+
+  #yellow .index-nav .active i {
+    background : #FD8521;
+  }
+
+  #yellow .index-nav .active {
+    color : #FFFFFF;
+    background : #FD8521;
+  }
+
+  #yellow .index-div .date-p {
+    background : #F9F9F9;
+    color : #FD8521;
+  }
+
+  #yellow .mjtjbj {
+    background : #F3F3F3;
+  }
+
+  #yellow .indexbtn {
+    background : #FD8521;
+  }
+
+  #yellow .indexbtn i {
+    background : url(/img/index-PC.png) no-repeat center center #FD8521 !important;
+  }
+
+  #yellow .index-div a .zb_green:hover {
+    background : #E3771E;
+  }
+
+  #yellow .index-div a:hover {
+    background : #FFFAF6;
+  }
+
+  #yellow .totop {
+    background : #FD8521;
+  }
+
+  #yellow .totop i {
+    background : url(/img/totop.png) no-repeat center center #FD8521 !important;
+  }
+
+  #yellow footer {
+    border-top : 60px #F6F6F6 solid;
+  }
+
+  #yellow .jump_videoan {
+    color : #FFFFFF;
+    background : #DE1E30;
+  }
+
+  #yellow .jfqh_wrap a {
+    color : #FD8521;
+  }
+
+  #yellow .jiabifeng .changci {
+    color : #FD8521;
+  }
+
+  #yellow .jiabifeng .jingq p {
+    color : #FD8521;
+  }
+
+  #yellow .jiabifeng .jingq_k p {
+    color : #FD8521;
+  }
+
+  #yellow .jiabifeng .jingq_bt {
+    color : #FD8521;
+    font-weight : 700;
+  }
+
+  #yellow .bifeng_num .jing {
+    color : #FD8521;
+  }
+
+  #yellow .jiabifeng .zhujingq p {
+    color : #FD8521;
+  }
+
+  #yellow .jiabifeng .zhujingq_k p {
+    color : #FD8521;
+  }
+
+  #yellow .jiabifeng .zhujingq_bt {
+    color : #FD8521;
+  }
+
+  #yellow .bifeng .jing {
+    color : #FD8521;
+  }
+
+  #yellow .bifeng_zhishu .bs_bt_zt {
+    color : #EF584C;
+  }
+
+  #yellow .bifeng_zhishu .bs_time {
+    color : #FD8521;
+  }
+
+  #yellow .bifeng_zhishu .bs_befeng {
+    color : #FD8521;
+  }
+
+  #yellow .zhishu .jscs_num cite.red {
+    background : #EF584C;
+  }
+
+  #yellow .zhishu .jscs_num cite.blue {
+    background : #FD8521;
+  }
+
+  #yellow .zhishu .jscs_num cite.yellow {
+    background : #FD8521;
+    color : #FFFFFF;
+  }
+
+  #yellow .zhishu_lan .qcred {
+    color : #FD8521;
+  }
+
+  #yellow .bifeng_kai .btnn {
+    background-color : #FD8521;
+  }
+
+  #yellow .newyearl {
+    /* background: url(/img/logo_june_l_yellow.png?r=42) */
+  }
+
+  #yellow .newyearr {
+    /* background: url(/img/logo_june_r_yellow.png?r=42) */
+  }
+}
+
+@media screen and (max-width:750px) {
+  #yellow .zhiding:before {
+    content : '';
+    /* background: url(/img/zd_img_w_r_yellow.png) no-repeat top left/33px 33px */
+  }
+
+  #yellow .jiabifeng .changci {
+    color : #FD8521;
+  }
+
+  #yellow .jiabifeng .bifeng {
+    color : #FD8521;
+  }
+
+  #yellow .jiabifeng .jingq p {
+    color : #006FC0;
+  }
+
+  #yellow .jiabifeng .jingq_k p {
+    color : #FD8521;
+  }
+
+  #yellow .jiabifeng .jingq_bt {
+    color : #FD8521;
+  }
+
+  #yellow .bifeng_num .jing {
+    color : #FD8521;
+  }
+
+  #yellow .bifeng .jing {
+    color : #FD8521;
+  }
+
+  #yellow .jiabifeng .zhujingq p {
+    color : #FD8521;
+    font-weight : 700;
+  }
+
+  #yellow .jiabifeng .zhujingq_k p {
+    color : #FD8521;
+  }
+
+  #yellow .jiabifeng .zhujingq_bt {
+    color : #FD8521;
+  }
+
+  #yellow .bifeng_zhishu .bs_vs {
+    color : #EF584C;
+  }
+
+  #yellow .bifeng_zhishu .bs_bt_zt {
+    color : #EF584C;
+  }
+
+  #yellow .bifeng_zhishu .bs_time {
+    color : #FD8521;
+  }
+
+  #yellow .bifeng_zhishu .bs_befeng {
+    color : #FD8521;
+  }
+
+  #yellow .zhishu .jscs_num cite.red {
+    background : #EF584C;
+    color : #FFFFFF;
+  }
+
+  #yellow .zhishu .jscs_num cite.blue {
+    background : #FD8521;
+    color : #FFFFFF;
+  }
+
+  #yellow .zhishu .jscs_num cite.yellow {
+    background : #FD8521;
+    color : #FFFFFF;
+  }
+
+  #yellow .bifeng_pei .redyellow_p {
+    color : #FD8521;
+  }
+
+  #yellow .bifeng_pei .redyellow_p em.bianhua {
+    background : #FD8521;
+    color : #FFFFFF;
+  }
+
+  #yellow .bfonoff {
+    background-color : #FD8521;
+  }
+
+  #yellow .jfqh_wrap a {
+    color : #FD8521;
+  }
+
+  #yellow .newyearl {
+    /* background: url(/img/logo_june_l_w_yellow.png?r=42) no-repeat; */
+    background-size : 100%;
+  }
+
+  #yellow .newyearr {
+    /* background: url(/img/logo_june_r_w_yellow.png?r=42) no-repeat; */
+    background-size : 100%;
+  }
+}
+
+@media screen and (max-width:750px) {
+  #yellow .gb_ad_an {
+    background : #FD8521;
+    border : 1px #FD8521 solid;
+    color : #FFFFFF;
+  }
+}
+
+@media screen and (min-width:750px) {
+  #yellow .gb_ad_an {
+    background : #FD8521;
+    color : #FFFFFF;
+  }
+
+  #yellow .guanbi_ad:hover .gb_ad_an {
+    background : #FD8521;
+    color : #FFFFFF;
+  }
+
+  #yellow .bs_time_new {
+    display : none;
+    margin-bottom : 15px;
+    color : #FD8521;
+  }
+
+  #yellow .bifeng_zhishu .yikaisai .ks_vs_new em {
+    color : #FD8521;
+  }
+}
+
+@media screen and (max-width:750px) {
+  #yellow .bs_bt_title .bs_time_new {
+    color : #FD8521;
+  }
+}
+
+#yellow .zhti_qiehuan > li:hover {
+  color : #FD8521;
+}
+
+#yellow .no-data .zwsig {
+  background : url(/img/no-data_yellow.png) no-repeat;
+  background-size : 100%;
+}
+
+#yellow .index_login_wrap {
+  /* background: url(/img/div_loding_yellow.gif) no-repeat center; */
+  background-size : 100%;
+}

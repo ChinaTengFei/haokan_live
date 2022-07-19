@@ -1,0 +1,30 @@
+@media screen and (min-width:750px) {
+  .list_content .vsp.timems {
+    color : #00BCB4 !important;
+    left : 150px;
+    font-weight : 700 !important;
+    font-size : 14px !important;
+    margin-top : 4px;
+  }
+  .list_content .vsp.timems.timems1 {
+    font-weight : 400 !important;
+    color : #999999 !important;
+  }
+  .jiabifeng .eventtime {
+    top : 4px !important;
+  }
+  .jiabifeng .eventtime i {
+    margin-top : 10px;
+  }
+  .score {
+    color : #333333 !important;
+    font-size : 20px !important;
+    font-weight : 700 !important;
+    letter-spacing : 5px !important;
+  }
+
+  .bgc1 .jiabifeng .eventtime {
+    top : 21px;
+    left : 14px;
+  }
+}
