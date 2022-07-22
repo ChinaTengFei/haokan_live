@@ -1,52 +1,73 @@
 <template>
   <div>
-    <TopComponents/>
+    <TopComponents />
+    <!-- <div class="top-div">
+      <span class="newyearl"></span>
+      <ul class="index-nav clearfix navindex head-nav">
+        <li :class="$route.path == '/' ? 'active' : ''">
+          <a href="/">
+            <span>热门</span>
+          </a>
+        </li>
+
+        <li :class="$route.path == '/zuqiu' ? 'active' : ''">
+          <a href="/zuqiu">
+            <span>足球</span>
+          </a>
+        </li>
+        <li :class="$route.path == '/lanqiu' ? 'active' : ''">
+          <a href="/lanqiu">
+            <span>篮球</span>
+          </a>
+        </li>
+        <li :class="$route.path == '/tiyu' ? 'active' : ''">
+          <a href="/tiyu"> <span>体育</span> </a>
+        </li>
+        <li :class="$route.path == '/dianjing' ? 'active' : ''">
+          <a href="/dianjing">
+            <span>电竞</span>
+          </a>
+        </li>
+      </ul>
+      <span class="newyearr"></span>
+    </div> -->
+    <nav>
+		      <ul class="index-nav clearfix navindex head-nav">
+        <li :class="$route.path == '/' ? 'active' : ''">
+          <a href="/">
+            <span>热门</span>
+          </a>
+        </li>
+
+        <li :class="$route.path == '/zuqiu' ? 'active' : ''">
+          <a href="/zuqiu">
+            <span>足球</span>
+          </a>
+        </li>
+        <li :class="$route.path == '/lanqiu' ? 'active' : ''">
+          <a href="/lanqiu">
+            <span>篮球</span>
+          </a>
+        </li>
+        <li :class="$route.path == '/tiyu' ? 'active' : ''">
+          <a href="/tiyu"> <span>体育</span> </a>
+        </li>
+        <li :class="$route.path == '/dianjing' ? 'active' : ''">
+          <a href="/dianjing">
+            <span>电竞</span>
+          </a>
+        </li>
+      </ul>
+	</nav>
     <div class="main">
-      <div class="top-div">
-
-        <span class="newyearl"></span>
-        <ul class="index-nav clearfix navindex">
-          <li :class="$route.path=='/'?'active':''">
-            <a href="/">
-              <span>热门</span>
-            </a>
-
-
-          <li :class="$route.path=='/zuqiu'?'active':''">
-            <a href="/zuqiu">
-              <span>足球</span>
-            </a>
-          </li>
-          <li :class="$route.path=='/lanqiu'?'active':''">
-            <a href="/lanqiu">
-              <span>篮球</span>
-            </a>
-          </li>
-          <li :class="$route.path=='/tiyu'?'active':''">
-            <a href="/tiyu">
-              <span>体育</span> </a>
-          </li>
-          <li :class="$route.path=='/dianjing'?'active':''">
-            <a href="/dianjing">
-              <span>电竞</span>
-            </a>
-          </li>
-        </ul>
-        <span class="newyearr"></span>
-      </div>
-
       <div
         class="index-div"
         zssyhqz="54334cl2iNsvtc2m0U2O0O0O258"
         zssyhqzt="80604cl2iNsvtc2m0V2z210"
       >
-        <div
-          class="list_wrap_one_wuy list_wrap list_wrap_one"
-          yn="1"
-        >
-          <nuxt-child/>
+        <div class="list_wrap_one_wuy list_wrap list_wrap_one" yn="1">
+          <nuxt-child />
         </div>
-
       </div>
       <div class="iosKJ">
         <span class="iostipimg"></span>
@@ -119,7 +140,7 @@ import listPage from "./listPage";
 
 export default {
   name: "Home",
-  components: {TopComponents, listPage},
+  components: { TopComponents, listPage },
   metaInfo() {
     return {
       title: "515直播-JRS直播,足球直播,NBA直播吧,低调看直播",
@@ -130,7 +151,8 @@ export default {
         },
         {
           name: "description",
-          content: "515直播（515.TV）是最好的低调看JRS直播吧，提供足球直播、NBA直播，英超直播、西甲直播、欧洲杯直播。看球就来515.TV直播导航站。"
+          content:
+            "515直播（515.TV）是最好的低调看JRS直播吧，提供足球直播、NBA直播，英超直播、西甲直播、欧洲杯直播。看球就来515.TV直播导航站。",
         },
       ],
     };
@@ -145,8 +167,7 @@ export default {
   created() {
     this._getMatch();
   },
-  mounted() {
-  },
+  mounted() {},
   destroyed() {
     clearInterval(this.timer);
   },
@@ -168,8 +189,7 @@ export default {
       //   });
     },
 
-    selectTab(val) {
-    },
+    selectTab(val) {},
     showSelect() {
       this.showUl = !this.showUl;
     },
@@ -182,6 +202,6 @@ export default {
 
 <script>
 export default {
-  name: 'IndexPage'
-}
+  name: "IndexPage",
+};
 </script>

@@ -1,6 +1,6 @@
 <!--  -->
 <template>
-  <div style="background:#191919;">
+  <!-- <div style="background:#191919;">
     <div class="main" style="background:#191919;">
       <div class="team">
         <div>
@@ -223,7 +223,45 @@
         <span>刷新</span>
       </div>
     </div>
-  </div>
+  </div> -->
+  <div class="pre-content wrap">
+        <h3>
+                  {{ gameInformation.rightName }}   {{ args.leftName }} VS {{ args.rightName }}
+                    </h3>
+        <p class="timeP" data-type="1" data-date="1658403000">比赛时间：{{date}}</p>
+        
+        <div class="zbvideo-box clearfix">
+            <div class="video-div fl" data-isonelocal="0" data-link="aHR0cHM6Ly93d3cua3RlMS50di9yb29tLzQzNDAwNQ%3D%3D" data-name="足球直播（外部）" data-limit="0">
+            <iframe
+        v-if="this.args.iframe_link"
+        :src="this.args.iframe_link"
+        width="100%"
+        allowfullscreen="true"
+        webkitallowfullscreen="true"
+        mozallowfullscreen="true"
+        type="application/x-shockwave-flash"
+        allowScriptAccess="sameDomain"
+        quality="high"
+        allow="autoplay"
+        scrolling="no"
+        border="0"
+        frameborder="no"/>
+            </div>
+
+           <footer>
+      <div>
+        <span>Copyright©2020 515直播</span><i></i>
+        <p>
+          免责声明：本平台所有直播信号源均实时采集于互联网并作测试用途，本站不生产、不制作任何信号。
+        </p>
+      </div>
+    </footer>
+
+        </div>
+        
+
+        
+    </div>
 </template>
 
 <script>
@@ -311,13 +349,14 @@ export default {
       time: "",
       pankou: { "1": [], "2": [], "3": [] },
       timer: "",
-      item:""
+      item:"",
+      date:""
     };
   },
 
   created() {
     this.title = this.$route.query.title;
-
+this.date = this.$route.query.date;
     this.getList();
   },
   methods: {
