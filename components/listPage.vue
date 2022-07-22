@@ -1,9 +1,10 @@
 <template>
   <div>
-    <div v-if="listdata" class="list_content">
+    <div v-if="listDatas" class="list_content">
 
-      <div v-for="(item, index) in listdata" :key="index">
+      <div v-for="(item, index) in listDatas" :key="index">
         <p v-if="item.segmdate" class="date-p">
+          <i></i>
           {{ item.segmdate }}
         </p>
 
@@ -21,45 +22,58 @@
           <section :class="{ zhiding: item.isTop === '1' }" class="clearfix jiabifeng"
 
                    wuyd="">
-            <div v-if="item.ms" class="changci" style="display: block;">
+            <!-- <div v-if="item.ms" class="changci" style="display: block;">
               {{ item.ms }}
               <cite class="noks"></cite>
-            </div>
+            </div> -->
 
-            <div v-if="[item.playId] && scoreObj[[item.matchId]]" class="bifeng" style="display: block;">
+            <!-- <div v-if="[item.playId] && scoreObj[[item.matchId]]" class="bifeng" style="display: block;">
               <em class="zq_zdf no">{{ scoreObj[item.matchId].dt }}</em> : <em
               class="zq_kdf no">{{ scoreObj[[item.matchId]].vz }}</em>
-            </div>
-
-            <p v-else class="vsp" style="color: #999">VS</p>
-            <div class="team zhudui zhudui_wuyd">
-              <span>
+              VS
+            </div> -->
+           
+            <!-- <p v-else class="vsp" style="color: #999">VS</p> -->
+             <!-- <div class="vsp">
+               <p>{{ item.leftName }}
+             </div> -->
+                 <div class=" zhudui ">
+              <!-- <span>
                 <img :src="item.leftImg" alt class>
-              </span>
-              <p>{{ item.leftName }}
-              </p>
+              </span> -->
+              {{ item.a.split(" ")[0] }} 
+            
+            </div>
+            <div class=" zhudui " :style="{
+                  'fontWeight':(comparedate(item.date)?'bold':'')
+                }" >
+              <!-- <span>
+                <img :src="item.leftImg" alt class>
+              </span> -->
+              {{ item.leftName }} VS {{ item.rightName }}
+            
             </div>
             <div class="center">
-              <p class="eventtime_wuy eventtime"><span class="feleimg">
-                        <img v-if="item.gameType == 1" src="/img/fenlei_1.png"/>
-                  <img v-if="item.gameType == 2" src="/img/fenlei_2.png"/>
-
+              <p class="eventtime_wuy eventtime"><span class="feleimg" :class="item.gameType == 1?'football':'basketball'">
+                 
 									</span>
-                <span><em>{{item.gameName}}</em>
+                <span>
+                 
                   <i>{{ item.isTop === "0" ? item.date.split(" ")[1].slice(0, 5) : item.date.slice(5, 16) }}</i>
                 </span>
+                 <!-- <em>{{item.gameName}}</em> -->
               </p>
               <p :class="{
                   zb_green: comparedate(item.date),
                 }" class="video"><i class="video-icon"></i><span>视频直播</span></p>
             </div>
-            <div class="team kedui">
+            <!-- <div class="team kedui">
               <span>
 
               <img :src="item.rightImg" alt class>
               </span>
               <p>{{ item.rightName }}</p>
-            </div>
+            </div> -->
           </section>
 
         </a>
@@ -72,13 +86,13 @@
       </div>
     </div>
     <div
-      v-if="listdata && listdata.length > 0 && more"
+      v-if="listDatas && listDatas.length > 0 && more"
       @click="loadMore"
       class="clcik_more"
     >
-      点击加载更多
+      点击加载更多>>
     </div>
-    <div  v-if="listdata && listdata.length > 0 && !more" class="clcik_more">
+    <div  v-if="listDatas && listDatas.length > 0 && !more" class="clcik_more">
       没有更多数据了
     </div>
   </div>
@@ -95,24 +109,24 @@ export default {
   data() {
     return {
       more: true,
-      listData: [],
+      listDatas: this.listdata,
       page: 1,
       scoreObj: {},
     };
   },
-  created() {
+  beforeMount() {
     this.initData()
     this.getMatch()
   },
 
   methods: {
     parseMatch(data) {
-      if(!this.listdata){
+      if(!this.listDatas){
         return
       }
       this.scoreObj = data ? (data["1"] ? data["1"] : {}) : {};
 
-      this.listdata.forEach((item) => {
+      this.listDatas.forEach((item) => {
         let matchData = this.scoreObj[item.matchId]
 
         if (matchData) {
@@ -144,16 +158,16 @@ export default {
       this.getData();
     },
     initData(){
-      if (!this.listdata) {
+      if (!this.listDatas) {
         return
       }
-      const listData1 = this.listdata.filter((v) => v.isTop === "1");
-      const listData2 = this.listdata.filter((v) => v.isTop !== "1");
+      const listDatas1 = this.listDatas.filter((v) => v.isTop === "1");
+      const listDatas2 = this.listDatas.filter((v) => v.isTop !== "1");
 
-      this.listdata = [...listData1, ...listData2];
+      this.listDatas = [...listDatas1, ...listDatas2];
       let date = "";
       // 置顶时间判断
-      this.listdata.forEach((v) => {
+      this.listDatas.forEach((v) => {
         if (v.isTop === "0") {
           const date1 = v.date.split(" ")[0];
           if (date !== date1) {
@@ -176,14 +190,15 @@ export default {
             return;
           }
 
-          this.listdata.push(...response.data.live_item);
-          const listData1 = this.listdata.filter((v) => v.m == "1");
-          const listData2 = this.listdata.filter((v) => v.m != "1");
+          this.listDatas.push(...response.data.live_item);
+          const listDatas1 = this.listDatas.filter((v) => v.m == "1");
+          const listDatas2 = this.listDatas.filter((v) => v.m != "1");
 
-          this.listdata = [...listData1, ...listData2];
+          this.listDatas = [...listDatas1, ...listDatas2];
+          console.log('ssssssss',this.listDatas)
           let date = "";
           // 置顶时间判断
-          this.listdata.forEach((v) => {
+          this.listDatas.forEach((v) => {
             if (v.isTop === "0") {
               const date1 = v.date.split(" ")[0];
               if (date !== date1) {
