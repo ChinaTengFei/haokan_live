@@ -191,14 +191,14 @@
       </div>
     </div>
     <div class="footer-wap">
-      <p>515直播——体育直播网站</p>
+      <p>好看体育——体育直播网站</p>
       <p>
         免责声明：本平台所有直播信号源均实时采集于互联网并作测试用途，本站不生产、不制作任何信号。
       </p>
     </div>
     <footer>
       <div>
-        <span>Copyright©2020 515直播</span><i></i>
+        <span>Copyright©2020 好看体育</span><i></i>
         <p>
           免责声明：本平台所有直播信号源均实时采集于互联网并作测试用途，本站不生产、不制作任何信号。
         </p>
@@ -250,7 +250,7 @@
 
            <footer>
       <div>
-        <span>Copyright©2020 515直播</span><i></i>
+        <span>Copyright©2020 好看体育</span><i></i>
         <p>
           免责声明：本平台所有直播信号源均实时采集于互联网并作测试用途，本站不生产、不制作任何信号。
         </p>
@@ -268,7 +268,7 @@
 // import axios from "axios";
 export default {
   metaInfo() {
-    const title =`${this.args.title}|${this.args.date}|【在线直播】-515.Tv直播`;
+    const title =`${this.args.title}|${this.args.date}|【在线直播】-好看体育-世界杯直播_足球直播_NBA直播-好看的体育直播吧`;
     const keyWords = `${this.args.title}`;
     const description =
       `${this.args.date && this.args.date.slice(5, 11)}《${this.args.title}》${this.args.gameName}直播将在准时${this.args.date &&
