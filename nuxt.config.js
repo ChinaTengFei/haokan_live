@@ -1,15 +1,15 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: '515直播-JRS直播,足球直播,NBA直播吧,低调看直播',
+    title: '好看体育-世界杯直播_足球直播_NBA直播-好看的体育直播吧',
     htmlAttrs: {
       lang: 'en'
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '515直播（515.TV）是最好的低调看JRS直播吧，提供足球直播、NBA直播，英超直播、西甲直播、欧洲杯直播。看球就来515.TV直播导航站。' },
-      { hid: 'keywords', name: 'keywords', content: 'JRS直播,足球直播,低调看直播,NBA直播吧' },
+      { hid: 'description', name: 'description', content: '在线观看2022卡塔尔世界杯直播就来好看体育！好看体育是专业的体育直播吧，提供足球直播、NBA直播、CBA直播、综合体育直播，全天24小时更新足球直播、NBA直播高清信号的导航网站。2022卡塔尔世界杯比赛直播尽在好看体育直播吧。' },
+      { hid: 'keywords', name: 'keywords', content: '世界杯直播,2022世界杯直播,体育直播,足球直播,NBA直播' },
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [

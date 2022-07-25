@@ -89,14 +89,7 @@
           <span>回首页</span></a
         >
       </div>
-      <div class="refreshbtn" onclick="location.reload()">
-        <i></i>
-        <span>刷新</span>
-      </div>
-      <div class="totop" onclick="window.scrollTo(0,0)">
-        <i></i>
-        <span>回顶部</span>
-      </div>
+    <div class="top-box" style="display: block;"><a href="#"></a></div>
     </div>
     <div class="waplist">
       <div class="once indexwap">
@@ -118,14 +111,14 @@
       </div>
     </div>
     <div class="footer-wap">
-      <p>515直播——体育直播网站</p>
+      <p>好看体育——体育直播网站</p>
       <p>
         免责声明：本平台所有直播信号源均实时采集于互联网并作测试用途，本站不生产、不制作任何信号。
       </p>
     </div>
     <footer>
       <div>
-        <span>Copyright©2020 515直播</span><i></i>
+        <span>Copyright©2020 好看体育</span><i></i>
         <p>
           免责声明：本平台所有直播信号源均实时采集于互联网并作测试用途，本站不生产、不制作任何信号。
         </p>
@@ -143,7 +136,7 @@ export default {
   components: { TopComponents, listPage },
   metaInfo() {
     return {
-      title: "515直播-JRS直播,足球直播,NBA直播吧,低调看直播",
+      title: "好看体育-JRS直播,足球直播,NBA直播吧,低调看直播",
       meta: [
         {
           name: "keyWords",
@@ -152,7 +145,7 @@ export default {
         {
           name: "description",
           content:
-            "515直播（515.TV）是最好的低调看JRS直播吧，提供足球直播、NBA直播，英超直播、西甲直播、欧洲杯直播。看球就来515.TV直播导航站。",
+            "好看体育（515.TV）是最好的低调看JRS直播吧，提供足球直播、NBA直播，英超直播、西甲直播、欧洲杯直播。看球就来515.TV直播导航站。",
         },
       ],
     };

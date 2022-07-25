@@ -1,14 +1,11 @@
 <template>
   <div>
-    <div v-if="listDatas" class="list_content">
-
+    <!-- <div v-if="listDatas" class="list_content">
       <div v-for="(item, index) in listDatas" :key="index">
         <p v-if="item.segmdate" class="date-p">
           <i></i>
           {{ item.segmdate }}
         </p>
-
-
         <a
           :class="{ bgc1: item.isTop == '1' }"
           class="clearfix" style="border-bottom: 1px solid #eee"
@@ -18,38 +15,19 @@
           '&gameName='+item.gameName+
           '&rightName='+item.rightName+
           '&date='+item.date">
-
           <section :class="{ zhiding: item.isTop === '1' }" class="clearfix jiabifeng"
 
                    wuyd="">
-            <!-- <div v-if="item.ms" class="changci" style="display: block;">
-              {{ item.ms }}
-              <cite class="noks"></cite>
-            </div> -->
-
-            <!-- <div v-if="[item.playId] && scoreObj[[item.matchId]]" class="bifeng" style="display: block;">
-              <em class="zq_zdf no">{{ scoreObj[item.matchId].dt }}</em> : <em
-              class="zq_kdf no">{{ scoreObj[[item.matchId]].vz }}</em>
-              VS
-            </div> -->
-           
-            <!-- <p v-else class="vsp" style="color: #999">VS</p> -->
-             <!-- <div class="vsp">
-               <p>{{ item.leftName }}
-             </div> -->
+ 
                  <div class=" zhudui ">
-              <!-- <span>
-                <img :src="item.leftImg" alt class>
-              </span> -->
+    
               {{ item.a.split(" ")[0] }} 
             
             </div>
             <div class=" zhudui " :style="{
                   'fontWeight':(comparedate(item.date)?'bold':'')
                 }" >
-              <!-- <span>
-                <img :src="item.leftImg" alt class>
-              </span> -->
+
               {{ item.leftName }} VS {{ item.rightName }}
             
             </div>
@@ -61,22 +39,90 @@
                  
                   <i>{{ item.isTop === "0" ? item.date.split(" ")[1].slice(0, 5) : item.date.slice(5, 16) }}</i>
                 </span>
-                 <!-- <em>{{item.gameName}}</em> -->
+      
               </p>
               <p :class="{
                   zb_green: comparedate(item.date),
                 }" class="video"><i class="video-icon"></i><span>视频直播</span></p>
             </div>
-            <!-- <div class="team kedui">
-              <span>
-
-              <img :src="item.rightImg" alt class>
-              </span>
-              <p>{{ item.rightName }}</p>
-            </div> -->
+ 
           </section>
 
         </a>
+      </div>
+    </div> -->
+    <div class="live-box" v-if="listDatas">
+      <div v-for="(item, index) in listDatas" :key="index">
+        <dd class="datedd" v-if="item.segmdate"><i></i>{{ item.segmdate }}日 直播节目表</dd>
+        <dd class="clearfix list_wrap_new_dd">
+          <!-- <p v-if="item.segmdate" class="date-p">
+            <i></i>
+            {{ item.segmdate }}
+          </p> -->
+          <a
+            :href="
+              '/bofang?iframe_link=' +
+              item.iframeLink +
+              '&leftName=' +
+              item.leftName +
+              '&title=' +
+              item.a +
+              '&gameName=' +
+              item.gameName +
+              '&rightName=' +
+              item.rightName +
+              '&date=' +
+              item.date
+            "
+          >
+            <!-- <span
+            class="feleimg"
+            :class="item.gameType == 1 ? 'football' : 'basketball'"
+          >
+          </span> -->
+            <div class="once-type" data-type="3">
+              <i
+                class="feleimg"
+                :class="item.gameType == 1 ? 'football' : 'basketball'"
+              ></i>
+            </div>
+            <div class="once-time">
+              {{
+                item.isTop === "0"
+                  ? item.date.split(" ")[1].slice(0, 5)
+                  : item.date.slice(5, 16)
+              }}
+            </div>
+            <div class="once-event">{{ item.a.split(" ")[0] }}</div>
+            <div class="once-game">
+              {{ item.leftName }} VS {{ item.rightName }}
+            </div>
+            <div class="video-link">
+              <span
+                class="zban_wrap video"
+                :class="{
+                  zban_wrap_new: comparedate(item.date),
+                }"
+              >
+                <img src="/img/icon-live.png?r=1" alt="" />
+                高清直播
+              </span>
+            </div>
+            <div class="wordindexgg">
+              <div class="sywordr">
+                <div class="sywordrone"></div>
+                <div class="sywordrtwo"></div>
+                <div class="sywordrthree"></div>
+                <div class="sywordrswiper">
+                  <div class="swiper-container sywordrswiper">
+                    <p class="swiper-wrapper"></p>
+                    <p class="swiper-pagination"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </dd>
       </div>
     </div>
     <div v-else class="list_content">
@@ -92,7 +138,7 @@
     >
       点击加载更多>>
     </div>
-    <div  v-if="listDatas && listDatas.length > 0 && !more" class="clcik_more">
+    <div v-if="listDatas && listDatas.length > 0 && !more" class="clcik_more">
       没有更多数据了
     </div>
   </div>
@@ -104,7 +150,7 @@ export default {
   name: "Home",
   components: {},
   props: {
-    listdata:[]
+    listdata: [],
   },
   data() {
     return {
@@ -115,19 +161,19 @@ export default {
     };
   },
   beforeMount() {
-    this.initData()
-    this.getMatch()
+    this.initData();
+    this.getMatch();
   },
 
   methods: {
     parseMatch(data) {
-      if(!this.listDatas){
-        return
+      if (!this.listDatas) {
+        return;
       }
       this.scoreObj = data ? (data["1"] ? data["1"] : {}) : {};
 
       this.listDatas.forEach((item) => {
-        let matchData = this.scoreObj[item.matchId]
+        let matchData = this.scoreObj[item.matchId];
 
         if (matchData) {
           const t0 = +new Date(item.date);
@@ -135,7 +181,6 @@ export default {
           if (t0 < t1) {
             const time = Math.floor((t1 - t0) / 1000 / 60);
             item.ms = time > 90 ? "90+" : time;
-
           }
         }
       });
@@ -149,7 +194,7 @@ export default {
           )
           .then((res) => {
             this.scoreInfo = res.data.result;
-            this.parseMatch(res.data.result)
+            this.parseMatch(res.data.result);
           });
       }, 3000);
     },
@@ -157,9 +202,9 @@ export default {
       this.page++;
       this.getData();
     },
-    initData(){
+    initData() {
       if (!this.listDatas) {
-        return
+        return;
       }
       const listDatas1 = this.listDatas.filter((v) => v.isTop === "1");
       const listDatas2 = this.listDatas.filter((v) => v.isTop !== "1");
@@ -175,7 +220,7 @@ export default {
             v.segmdate = date;
           }
         }
-      })
+      });
     },
     getData() {
       axios
@@ -184,7 +229,6 @@ export default {
           `s=0&t=1&a=${this.type}&g=${this.page}`
         )
         .then((response) => {
-
           if (response.data.messs) {
             this.more = false;
             return;
@@ -195,7 +239,7 @@ export default {
           const listDatas2 = this.listDatas.filter((v) => v.m != "1");
 
           this.listDatas = [...listDatas1, ...listDatas2];
-          console.log('ssssssss',this.listDatas)
+          console.log("ssssssss", this.listDatas);
           let date = "";
           // 置顶时间判断
           this.listDatas.forEach((v) => {
@@ -206,29 +250,29 @@ export default {
                 v.segmdate = date;
               }
             }
-          })
-        })
+          });
+        });
     },
     comparedate(date1) {
       let date = new Date(date1);
       let now = new Date();
       return date.getTime() < now.getTime();
     },
-    jumpPlay(item) {
-      let path = "/bofang";
-      this.$router.push({
-        path:path,
-        query: {
-          iframe_link: item.iframeLink,
-          leftName: item.leftName,
+    // jumpPlay(item) {
+    //   let path = "/bofang";
+    //   this.$router.push({
+    //     path: path,
+    //     query: {
+    //       iframe_link: item.iframeLink,
+    //       leftName: item.leftName,
 
-          title: item.a,
-          gameName: item.gameName,
-          date: item.date,
-          rightName: item.rightName,
-        }
-      });
-    },
+    //       title: item.a,
+    //       gameName: item.gameName,
+    //       date: item.date,
+    //       rightName: item.rightName,
+    //     },
+    //   });
+    // },
   },
 };
 </script>
